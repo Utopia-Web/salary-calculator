@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Easily calculate your take-home pay and taxes with our salary calculator!">
+  <meta name="keywords" content="salary calculator, take-home pay, tax calculation">
+  <meta name="author" content="Movan">
+  <meta property="og:title" content="Salary Calculator">
+  <meta property="og:description" content="Quickly and effortlessly calculate your take-home pay!">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Salary Calculator,Net Pay Calculator - After-Tax Income Calculator</title>
+</head>
+<body>
+  <h1>Salary Calculator</h1>
+  <div class="content">
+    <input id="hour" type="number" placeholder="Work Hours (hours)" step="any" autocomplete="off">
+    <input id="money" type="number" placeholder="Enter your hourly wage (₩)" step="any" autocomplete="off">
+    <input id="tax" type="number" placeholder="Tax (%)" step="any" autocomplete="off">
+    
+    <!-- 제목 입력 -->
+    <input id="title" type="text" placeholder="Name to save">
+    
+    <!-- 버튼 컨테이너 -->
+    <div class="button-container">
+      <button id="caLc">calculate</button>
+      <button id="saVe">save</button>
+      <button id="reSet">reset</button>
+    </div>
+  </div>
+
+  <!-- 계산 결과 -->
+  <div id="result" class="result" style="display: none;">
+    <!-- 결과가 여기에 나열됩니다 -->
+  </div>
+
+  <div id="saved-results" class="saved-results">
+    <!-- 저장된 결과들이 여기에 나열됩니다 -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
